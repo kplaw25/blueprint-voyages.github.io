@@ -58,10 +58,15 @@ nav a.active, nav a:hover {
 
 .hero h2 {
   font-size: 3rem;
-  background: rgba(0, 0, 0, 0.5);
-  padding: 20px;
   border-radius: 10px;
+  font-family: 'Montserrat', sans-serif;
 }
+
+.hero p {
+  font-size: 1.8rem; /* Adjust as needed */
+  font-family: 'Montserrat', sans-serif;
+}
+
 
 main {
   padding: 60px 20px;
@@ -297,6 +302,17 @@ footer {
   height: auto;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.logo {
+  height: 80px;
+  width: auto;
 }
 
 
