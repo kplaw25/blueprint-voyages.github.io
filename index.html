@@ -5,13 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Blueprint Voyages</title>
   <link rel="stylesheet" href="style.css">
-    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css" />
 </head>
 
 <body>
   <header class="header-white">
-    <h1>Blueprint Voyages</h1>
+    <div class="logo-container">
+      <a href="index.html"><img src="logo2.png" alt="Blueprint Voyages Logo" class="logo"></a>
+    </div>
     <nav>
       <ul>
         <li><a href="index.html" class="active">HOME</a></li>
@@ -24,108 +26,105 @@
 
   <section class="hero">
     <div class="hero-text">
-      <h2>Blueprint Voyages</h2>
+      <h2>BLUEPRINT VOYAGES</h2>
       <p>Your dream trip, thoughtfully planned.</p>
     </div>
   </section>
 
- <main>
-  <!-- Call to Action -->
-  <section class="cta-section">
-    <h2>Let's team up to create your dream trip.</h2>
-  </section>
+  <main>
+    <!-- Call to Action -->
+    <section class="cta-section">
+      <h2>Let's team up to create your dream trip.</h2>
+    </section>
 
-  <!-- Service Offerings -->
-  <section class="section-tan">
-    <h2>Service Offerings</h2>
-    <div class="services">
-      <div class="service-card">
-        <h3>Start from Scratch</h3>
-        <p>Bring your idea, and I'll bring it to life—from destination to day-by-day details.</p>
+    <!-- Service Offerings -->
+    <section class="section-tan">
+      <h2>Service Offerings</h2>
+      <div class="services">
+        <div class="service-card">
+          <h3>Start from Scratch</h3>
+          <p>Bring your idea, and I'll bring it to life—from destination to day-by-day details.</p>
+        </div>
+        <div class="service-card">
+          <h3>Half-Baked Plan Help</h3>
+          <p>Already have some pieces booked? I’ll fill in the gaps—routes, timing, activities, and more.</p>
+        </div>
+        <div class="service-card">
+          <h3>Special Trip Planning</h3>
+          <p>Big family trip or celebration? I’ll coordinate logistics, group needs, and local fun that works for all.</p>
+        </div>
       </div>
-      <div class="service-card">
-        <h3>Half-Baked Plan Help</h3>
-        <p>Already have some pieces booked? I’ll fill in the gaps—routes, timing, activities, and more.</p>
+    </section>
+
+    <!-- Why Me -->
+    <section class="section-white why-me">
+      <div class="why-me-wrapper">
+        <div class="why-me-text">
+          <h2>Why Work With Me</h2>
+          <p class="why-me-intro">I bring care, creativity, and organization to every travel plan I create—because your trip deserves more than a generic itinerary.</p>
+          <div class="columns">
+            <ul>
+              <li>Personalized—not cookie-cutter</li>
+              <li>Flexible services to meet your needs</li>
+              <li>Friendly, responsive communication</li>
+              <li>Deep love for travel logistics</li>
+            </ul>
+            <ul>
+              <li>Creative itineraries, thoughtfully built</li>
+              <li>Stress-free planning process</li>
+              <li>Experienced in international travel</li>
+              <li>Big-picture vision + small-detail focus</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="why-me-map">
+          <h3>Where I've Planned</h3>
+          <div id="trip-map"></div>
+        </div>
       </div>
-      <div class="service-card">
-        <h3>Special Trip Planning</h3>
-        <p>Big family trip or celebration? I’ll coordinate logistics, group needs, and local fun that works for all.</p>
+    </section>
+
+    <!-- Testimonials -->
+    <section>
+      <h2>TESTIMONIALS</h2>
+      <div class="testimonials">
+        <div class="testimonial">
+          <p>“Blueprint Voyages turned my vague idea of a European trip into a thoughtfully crafted itinerary that I couldn’t wait to follow. I didn’t have to worry about a thing!”</p>
+        </div>
+        <div class="testimonial">
+          <p>“What I appreciated most was the level of detail and care. Every suggestion felt tailored just for us.”</p>
+        </div>
       </div>
-    </div>
-  </section>
-
-<!-- Why Me -->
-<section class="section-white why-me">
-  <div class="why-me-wrapper">
-    <div class="why-me-text">
-      <h2>Why Work With Me</h2>
-      <p class="why-me-intro">I bring care, creativity, and organization to every travel plan I create—because your trip deserves more than a generic itinerary.</p>
-      <div class="columns">
-        <ul>
-          <li>Personalized—not cookie-cutter</li>
-          <li>Flexible services to meet your needs</li>
-          <li>Friendly, responsive communication</li>
-          <li>Deep love for travel logistics</li>
-        </ul>
-        <ul>
-          <li>Creative itineraries, thoughtfully built</li>
-          <li>Stress-free planning process</li>
-          <li>Experienced in international travel</li>
-          <li>Big-picture vision + small-detail focus</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="why-me-map">
-      <h3>Where I've Planned</h3>
-      <div id="trip-map"></div>
-    </div>
-  </div>
-</section>
-
-
-  <!-- Testimonials -->
-  <section>
-    <h2>TESTIMONIALS</h2>
-    <div class="testimonials">
-      <div class="testimonial">
-        <p>“Blueprint Voyages turned my vague idea of a European trip into a thoughtfully crafted itinerary that I couldn’t wait to follow. I didn’t have to worry about a thing!”</p>
-      </div>
-      <div class="testimonial">
-        <p>“What I appreciated most was the level of detail and care. Every suggestion felt tailored just for us.”</p>
-      </div>
-    </div>
-  </section>
-</main>
-
-
+    </section>
+  </main>
 
   <footer>
     <p>&copy; 2025 Blueprint Voyages. All rights reserved.</p>
   </footer>
-<script>
-  const map = L.map('trip-map').setView([46.8, 8.2], 4); // center of Europe
 
-  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    attribution:
-      'Map data © <a href="https://openstreetmap.org">OpenStreetMap</a> contributors',
-  }).addTo(map);
+  <script>
+    const map = L.map('trip-map').setView([46.8, 8.2], 4); // center of Europe
 
-  // Add trip locations with popup labels
-  const locations = [
-  { coords: [41.9028, 12.4964], label: 'Rome, Italy' },
-  { coords: [40.8518, 14.2681], label: 'Naples, Italy' },
-  { coords: [45.4408, 12.3155], label: 'Venice, Italy' },
-  { coords: [47.0502, 8.3093], label: 'Lucerne, Switzerland' },
-  { coords: [49.2776, -0.7035], label: 'Bayeux, France' },
-  { coords: [48.8566, 2.3522], label: 'Paris, France' },
-  { coords: [41.3851, 2.1734], label: 'Barcelona, Spain' }
-];
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution:
+        'Map data © <a href="https://openstreetmap.org">OpenStreetMap</a> contributors',
+    }).addTo(map);
 
-  locations.forEach(({ coords, label }) => {
-    L.marker(coords).addTo(map).bindPopup(label);
-  });
-</script>
+    // Add trip locations with popup labels
+    const locations = [
+      { coords: [41.9028, 12.4964], label: 'Rome, Italy' },
+      { coords: [40.8518, 14.2681], label: 'Naples, Italy' },
+      { coords: [45.4408, 12.3155], label: 'Venice, Italy' },
+      { coords: [47.0502, 8.3093], label: 'Lucerne, Switzerland' },
+      { coords: [49.2776, -0.7035], label: 'Bayeux, France' },
+      { coords: [48.8566, 2.3522], label: 'Paris, France' },
+      { coords: [41.3851, 2.1734], label: 'Barcelona, Spain' }
+    ];
 
+    locations.forEach(({ coords, label }) => {
+      L.marker(coords).addTo(map).bindPopup(label);
+    });
+  </script>
 </body>
 </html>
