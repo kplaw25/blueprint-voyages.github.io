@@ -367,4 +367,55 @@ margin-top: 1rem;
 }
 
 
+.section-title {
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #222;
+}
+
+/* Style for the card containers */
+.card {
+  background-color: #fdfdfd;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  margin: 1.5rem auto;
+  max-width: 800px;
+}
+
+/* Style for list items in question/help sections */
+.card ul {
+  list-style: disc;
+  padding-left: 1.5rem;
+  margin: 0;
+}
+
+.card li {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Optional: Style lead text consistently */
+.lead {
+  font-size: 1.1rem;
+  color: #444;
+  max-width: 800px;
+  margin: 0 auto 1.5rem;
+  text-align: center;
+}
+
+/* Optional: Align personal-note text */
+.personal-note {
+  max-width: 800px;
+  margin: 1.5rem auto 0;
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.6;
+  text-align: center;
+}
+
+
 
