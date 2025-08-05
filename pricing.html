@@ -1,87 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Blueprint Voyages | Services & Pricing</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Blueprint Voyages | Pricing</title>
+  <link rel="stylesheet" href="style.css">
   <style>
-    body {
-      font-family: 'Inter', sans-serif;
-      margin: 0;
-      background-color: #f9f9f9;
-      color: #333;
+    .pricing-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1.5rem;
+    }
+    .pricing-table th, .pricing-table td {
+      padding: 1rem;
+      border: 1px solid #ddd;
+      text-align: center;
+    }
+    .pricing-table th {
+      background-color: #f4f4f4;
+      font-weight: bold;
+    }
+    .addon-list, .notes-list {
+      list-style: disc;
+      padding-left: 2rem;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .addon-list li, .notes-list li {
+      margin-bottom: 0.75rem;
       line-height: 1.6;
     }
-    header.header-white {
-      background-color: #ffffff;
-      padding: 1.5rem 2rem;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    .consultation-note {
+      padding: 1.5rem;
+      background-color: #fdfdfd;
+      border-left: 4px solid #444;
+      max-width: 800px;
+      margin: 2rem auto;
+      font-size: 1.05rem;
+      line-height: 1.6;
     }
-    header h1 {
-      margin: 0;
-    }
-    nav ul {
-      list-style: none;
-      display: flex;
-      gap: 1.5rem;
-      padding: 0;
-    }
-    nav a {
-      text-decoration: none;
-      color: #444;
-      font-weight: 600;
-    }
-    nav a.active {
-      color: #005f73;
-    }
-    section {
-      padding: 4rem 2rem;
-      max-width: 1000px;
-      margin: auto;
-    }
-    .services-intro {
-      background-color: #e6f2f2;
-      border-radius: 12px;
-      padding: 3rem;
-      margin-bottom: 2rem;
-    }
-    .services-details {
-      background-color: #ffffff;
-      border: 1px solid #ddd;
-      border-radius: 12px;
-      padding: 3rem;
-      margin-bottom: 2rem;
-    }
-    .quote-reminder {
-      background-color: #fef3c7;
-      border-left: 6px solid #facc15;
-      padding: 2rem;
-      border-radius: 10px;
-      margin-bottom: 2rem;
-    }
-    .service-list li {
-      margin-bottom: 1rem;
-    }
-    .services-image img {
-      max-width: 100%;
-      border-radius: 10px;
-      margin-top: 2rem;
-    }
-    footer {
+    .intro-section, .how-it-works {
+      max-width: 800px;
+      margin: 2rem auto;
       text-align: center;
-      padding: 2rem;
-      background-color: #f0f0f0;
-      margin-top: 2rem;
     }
   </style>
 </head>
 
 <body>
   <header class="header-white">
-    <h1>Blueprint Voyages</h1>
+    <div class="logo-container">
+      <a href="index.html"><img src="logo2.png" alt="Blueprint Voyages Logo" class="logo"></a>
+    </div>
     <nav>
       <ul>
         <li><a href="index.html">HOME</a></li>
@@ -93,50 +63,82 @@
   </header>
 
   <main>
-    <section class="services-intro">
-      <h2>Tailored Travel Planning Services</h2>
-      <p>
-        Every trip is different. Whether you're starting with just an idea or already have pieces in place, my planning services are flexible and personalized to fit your needs. From small getaways to large group adventures, I take the time to understand your vision and make it a reality.
-      </p>
-      <p>
-        Every client begins with a free consultation call where you can share your goals, timeline, and preferences. After the call, I’ll provide a custom quote based on the complexity, length, and scope of your trip.
-      </p>
-      <p>
-        Fill out the interest form on the <a href="contact.html">contact page</a> to get started!
-      </p>
+<section class="consultation-note">
+      <h3>Start with a Free Consultation Call</h3>
+      <p>Everyone starts with a free, no-pressure consultation call. It’s a chance for us to connect, talk through your trip, and see if we’re a good fit. There’s no obligation to move forward, and nothing is locked in from that chat.</p>
+      <p>Interested in working together? <a href="contact.html">Reach out through the contact page</a> and we’ll set up a time to talk and create a personalized plan and pricing structure that works for your unique trip.</p>
     </section>
 
-    <section class="services-details">
-      <h3>What I Offer</h3>
-      <ul class="service-list">
-        <li><strong>Trip Conceptualization:</strong> Help you choose where to go, based on time, season, and travel style.</li>
-        <li><strong>Destination & Lodging Guidance:</strong> Recommend ideal cities, neighborhoods, and specific hotels or Airbnbs based on your trip goals.</li>
-        <li><strong>Flight Assistance:</strong> Research and guide you to best flight options, including alerts on pricing trends.</li>
-        <li><strong>Activity & Experience Planning:</strong> Curate activities based on your preferences, and contact providers to check availability so you can book confidently.</li>
-        <li><strong>Itinerary Documentation:</strong> Provide you with a clean, organized travel document containing addresses, directions, booking details, and daily plans.</li>
-        <li><strong>Meal & Event Planning:</strong> Offer dining recommendations and help plan special occasions or group meals.</li>
-        <li><strong>Destination Research:</strong> Provide tips, cultural insights, and must-know travel information for each location.</li>
-        <li><strong>Packing & Travel Tips:</strong> Customized packing lists and travel prep guides tailored to your destinations and activities.</li>
-        <li><strong>Personalized Meetings:</strong> Meet virtually or in-person (locally) as needed throughout the planning process.</li>
+    <section class="intro-section">
+      <h1>Flexible Pricing</h1>
+      <p>The prices below serve as a general guide. Final pricing may be higher or lower depending on the level of customization, trip length, and complexity. Once we talk through your trip we can decide a price that makes sense. </p>
+    </section>
+
+    <section class="section-tan">
+      <h2>Pricing Base Framework</h2>
+      <div class="table-wrapper">
+        <table class="pricing-table">
+          <thead>
+            <tr>
+              <th>Trip Length</th>
+              <th>1–4 People</th>
+              <th>5–10 People</th>
+              <th>10+ People</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Weekend (1–3 days)</td>
+              <td>$250</td>
+              <td>$325</td>
+              <td>$400</td>
+            </tr>
+            <tr>
+              <td>Short Trip (4–7 days)</td>
+              <td>$375</td>
+              <td>$475</td>
+              <td>$575</td>
+            </tr>
+            <tr>
+              <td>Standard Trip (8–14 days)</td>
+              <td>$525</td>
+              <td>$650</td>
+              <td>$775</td>
+            </tr>
+            <tr>
+              <td>Extended Trip (15+ days)</td>
+              <td>$800</td>
+              <td>$950</td>
+              <td>$1,100</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-white">
+      <h2>Add-On Options</h2>
+      <ul class="addon-list">
+        <li><strong>Special Occasion Planning</strong> (honeymoon, anniversary, proposal, birthday bash, etc.): +$150–$500</li>
+	<li><strong>Last-Minute Planning</strong> (less than 2 weeks' notice): +$100 flat</li>
+	<li><strong>Other Custom Requests</strong> (extra research, event planning, budget help, or anything else you need): Just ask! We’ll discuss if additional costs apply based on your unique request.</li>
+
       </ul>
-      <p><em>Note: I am not a travel agent and do not make bookings. I equip you with everything needed so you can stay in control and book confidently.</em></p>
     </section>
 
-    <section class="quote-reminder">
-      <h3>Pricing</h3>
-      <p>
-        Because no two trips are the same, pricing is custom based on the amount of time and support needed. After our free consult call, you'll receive a quote outlining a flat planning fee.
-      </p>
-      <p>
-        Whether you're planning a romantic getaway, a month-long European adventure, or a family trip with multiple stops — I’m here to help every step of the way.
-      </p>
+    <section class="section-tan">
+      <h2>Notes & Flexibility</h2>
+      <ul class="notes-list">
+        <li>All packages assume full-service planning support unless otherwise discussed.</li>
+        <li>If you've already made progress on your itinerary, we can reduce the cost—just ask!</li>
+        <li>Pricing is for planning only. You'll book your own travel and accommodations.</li>
+        <li>There are no hidden fees and pricing is confirmed before planning begins.</li>
+      </ul>
     </section>
-
-    </main>
+  </main>
 
   <footer>
     <p>&copy; 2025 Blueprint Voyages. All rights reserved.</p>
   </footer>
 </body>
-
 </html>
